@@ -1,0 +1,37 @@
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="expenseEntries">
+    <ng-container matColumnDef="item">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element" style="text-align: left">
+
+        {{element.item}} </td>
+    </ng-container>
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element" style="text-align: left">
+
+        {{element.amount}} </td>
+    </ng-container>
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef> Sales </th>
+      <td mat-cell *matCellDef="let element" style="text-align: left">
+
+        {{element.category}} </td>
+    </ng-container>
+    <ng-container matColumnDef="location">
+      <th mat-header-cell *matHeaderCellDef> Department </th>
+      <td mat-cell *matCellDef="let element" style="text-align:left">
+
+        {{element.location}} </td>
+    </ng-container>
+    <ng-container matColumnDef="spendOn">
+      <th mat-header-cell *matHeaderCellDef> Date </th>
+      <td mat-cell *matCellDef="let element" style="text-align: left">
+
+        {{element.spendOn}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

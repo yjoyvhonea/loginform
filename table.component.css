@@ -1,0 +1,40 @@
+/* Expense entry list styles */
+.mat-elevation-z8,
+.col-sm {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.col-sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.entry-list {
+  margin: 0;
+  justify-content: center;
+}
+
+@media screen and (max-width: 999px) {
+
+  .mat-elevation-z8,
+  .col-sm {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .col-sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .entry-list {
+    margin: 0px;
+  }
+}

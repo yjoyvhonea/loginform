@@ -1,0 +1,103 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 20px 10px;
+  background: #5bc0b8cc;
+}
+
+.logo {
+  color: aliceblue;
+  font-size: 30px;
+  /* font-style: oblique; */
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.logo :hover {
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 5px;
+}
+
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  color: rgb(0, 0, 0);
+  list-style-type: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 25px;
+  position: relative;
+
+}
+
+.menu ul li:hover {
+  color: aqua;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 999px) {
+  .menu {
+    position: fixed;
+    right: -280px;
+    top: 59px;
+    width: 280px;
+    height: 100%;
+    background: #222;
+  }
+
+  .menu ul li {
+    display: block;
+    text-align: left;
+    padding: 25px 100px 20px 15px;
+    border-bottom: 1px solid #312f2f;
+
+  }
+
+  .menu_icon {
+    display: inline-block;
+    position: relative;
+    right: 9px;
+    top: 5px;
+  }
+
+  .menu_icon span {
+    width: 32px;
+    height: 3px;
+    background: lightgray;
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu_icon span:nth-child(2) {
+    margin: 4px 0;
+  }
+
+  .menu_icon_Class span:nth-child(2){
+    display: none;
+  }
+
+  .menu_icon_Class span:nth-child(1){
+    transform: rotate(40deg);
+  }
+
+  .menu_icon_Class span:nth-child(3){
+    transform: rotate(-40deg);
+    margin-top: -3px;
+  }
+
+  .menuClass {
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+
+}
